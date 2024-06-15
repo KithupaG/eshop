@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/advsearch.css" />
+  <title>Advanced Search | New Tech</title>
+</head>
+
+<body>
+  <div class="container p-5"
+    style="margin-top: 2em;background-color: #dfdbdb; padding: 20px; border-radius: 5px; height: auto;">
+    <a href="store.html">
+      <i class="fas fa-angle-left" style="font-size: 20px; color: #333;" title="Back To Store"></i>
+    </a>
+    <h3 class="display-5 text-center mb-5">Advanced Search</h3>
+    <div class="store-header mt-5" style="margin: 5em;">
+      <div class="input-group w-100">
+          <div class="input-group-prepend">
+              <li class="nav-item dropdown" id="myDropdown" style="list-style: none;">
+                  <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                      style="border-radius: 10px 0px 0px 10px;">
+                      Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li> <a class="dropdown-item" href="#">Laptops & Desktops &raquo;</a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                              <li><a class="dropdown-item" href="#">HP</a></li>
+                              <li><a class="dropdown-item" href="#">Dell</a></li>
+                              <li><a class="dropdown-item" href="#">Mac</a></li>
+                              <li><a class="dropdown-item" href="#">Asus</a></li>
+                              <li><a class="dropdown-item" href="#">Acer</a></li>
+                              <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                              <li><a class="dropdown-item" href="#">Sony</a></li>
+                          </ul>
+                      </li>
+                      <li> <a class="dropdown-item" href="#">Computer Accessories &raquo; </a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Mice</a></li>
+                              <li><a class="dropdown-item" href="#">Headsets</a></li>
+                              <li><a class="dropdown-item" href="#">Speakers</a></li>
+                              <li><a class="dropdown-item" href="#">Keyboards</a></li>
+                              <li><a class="dropdown-item" href="#">Web Cams</a></li>
+                              <li><a class="dropdown-item" href="#">Monitors</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> Tech &raquo; </a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Drones</a></li>
+                              <li><a class="dropdown-item" href="#">Robots</a></li>
+                              <li><a class="dropdown-item" href="#">Arduino Boards</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> Hardware &raquo; </a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Graphic Cards &raquo; </a>
+                                  <ul class="submenu dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Intel</a></li>
+                                      <li><a class="dropdown-item" href="#">Nvidia</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">RAM</a></li>
+                              <li><a class="dropdown-item" href="#">CPU &raquo; </a>
+                                  <ul class="submenu dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Intel</a></li>
+                                      <li><a class="dropdown-item" href="#">AMD</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">MotherBoards</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> Gaming &raquo; </a>
+                          <ul class="submenu dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Gaming Laptop </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Gaming Desktop</a></li>
+                              <li><a class="dropdown-item" href="#">Gaming Consoles</a></li>
+                              <li><a class="dropdown-item" href="#">Gaming Accessories &raquo; </a>
+                                  <ul class="submenu dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Gaming Fans</a></li>
+                                      <li><a class="dropdown-item" href="#">Gaming Controller</a></li>
+                                      <li><a class="dropdown-item" href="#">Gaming Headsets</a></li>
+                                      <li><a class="dropdown-item" href="#">Gaming Keyboard</a></li>
+                                      <li><a class="dropdown-item" href="#">Gaming Mouse</a></li>
+                                      <li><a class="dropdown-item" href="#">Lighting</a></li>
+                                      <li><a class="dropdown-item" href="#">Thermal Paste</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+          </div>
+          <input type="text" class="form-control w-50" placeholder="Search in NewTech.....">
+          <button type="button" class="btn btn-success btn-block">
+              <i class="fas fa-search"></i>
+          </button>
+          <a href="advsearch.html" class="btn btn-outline-dark"
+              style="border-radius: 0px 10px 10px 0px;margin-right: 10px;">
+              Advanced
+          </a>
+      </div>
+  </div>
+    <form style="height: 110vh;">
+      <div class="form">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button"
+            placeholder="Search......">
+        </div>
+        <div class="option">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>All Categories</option>
+            <option value="1">Laptops & Desktops</option>
+            <option value="2">Computer Accessories</option>
+            <option value="3">Tech</option>
+            <option value="4">Hardware</option>
+            <option value="5">Gaming</option>
+          </select>
+        </div>
+        <hr class="mt-4 mb-4">
+        <div class="checkbox">
+          <h5 class="text-start" style="font-weight: bold;">Search Including</h5>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Title and description</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Completed listings</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Sold listings</label>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4">
+        <div class="rangeBox">
+          <h5 class="text-start" style="font-weight: bold;">Price Range</h5>
+          <div id="inputRange">
+            <label class="form-label">Price To: </label>
+            <input type="number" class="form-control" placeholder="Price From $" style="width: 100%;">
+            <label class="form-label">Price From:</label>
+            <input type="number" class="form-control" placeholder="Price To $" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4">
+      <div class="checkbox">
+        <h5 class="text-start" style="font-weight: bold;">Condition</h5>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">New</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Used</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Not Specified</label>
+        </div>
+        <hr class="mt-4 mb-4">
+        <div class="checkbox">
+          <button type="button" class="btn btn-success" style="width: 100%; margin-bottom: 2rem;">
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="margin-top mt-5"></div>
+</body>
+<script src="js/main.js" defer></script>
+
+</html>
