@@ -21,13 +21,8 @@ Free to use and can use it for anything just maximize the security protocols bec
 1. PHP
 2. SQL
 
-# Yet to use frameworks
-
-1. React
-
 # Other
 
 1. Fontawesome
 2. Google Fonts
-
-# FREE TO USE TO OWN SITE
+3. Bootstrap
